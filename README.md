@@ -1,23 +1,20 @@
+This is a fork of the original [Works with Yeti repo for SSDP](https://github.com/netbeast/react-native-ssdp), and the company no longer seems to be in business.
+
 # SSDP fork for React Native from node
 
 This is a fork of `node-ssdp` that uses `react-native-udp` instead of `dgram` to enable react multicast messaging and plain socket control. The API is the same as in the forked version.
 
-<a href="https://getyeti.co" target="_blank">
-   <img alt="works with yeti" src="https://github.com/netbeast/react-native-dial/raw/master/works-with-yeti.png" width="100" />
-</a>
-
-> This package powers [Yeti Smart Home](https://getyeti.co) and is used in production. It is maintained with our developers's free time, PRs and issues are more than welcome.
+> This package powers [Bestie Bot](https://bestiebot.com) applications and is used in production. It is maintained with our developers's free time, PRs and issues are more than welcome.
 
 ## Installation
 
-Unless React Native Version is > 0.29 use rnpm else use react-native link.
+Unless React Native Version is > 0.6 use rnpm else use react-native link.
 
 ```javascript
-npm install react-native-ssdp
-rnpm link
+npm install @bestie-bot/react-native-ssdp
 ```
 
-Make sure you set `Buffer` as global in `react-native-udp`'s UdpSockets.js (noted filename end with letter s)
+Make sure you set `Buffer` as global in `react-native-udp`'s UdpSockets.js (noted filename ends with letter s)
 
 ```javascript
 global.Buffer = global.Buffer || require('buffer').Buffer
