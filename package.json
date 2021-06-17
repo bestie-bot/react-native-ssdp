@@ -11,7 +11,8 @@
   "version": "2.8.2",
   "author": [
     "Ilya Shaisultanov <ilya.shaisultanov@gmail.com>",
-    "Netbeast Staff <staff@netbeast.co>"
+    "Netbeast Staff <staff@netbeast.co>",
+    "Bestie Bot <support@bestiebot.com>"
   ],
   "peerDependencies": {
     "buffer": ">=5.0.6",
@@ -21,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/netbeast/react-native-ssdp.git"
+    "url": "git+ssh://git@github.com/bestie-bot/react-native-ssdp.git"
   },
   "bugs": {
-    "url": "https://github.com/netbeast/react-native-ssdp/issues"
+    "url": "https://github.com/bestie-bot/react-native-ssdp/issues"
   },
   "main": "./index",
   "engines": {
@@ -46,5 +47,10 @@
     "example": "example",
     "test": "test"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "buffer": "^5.6.0",
+    "react-native-network-info": "^5.2.1",
+    "react-native-udp": "2.6.0"
+  }
 }
